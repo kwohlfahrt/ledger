@@ -68,6 +68,7 @@ public:
   mask_t(const mask_t& m) : expr(m.expr) {
     TRACE_CTOR(mask_t, "copy");
   }
+  mask_t& operator=(const mask_t& m) = default;
   ~mask_t() throw() {
     TRACE_DTOR(mask_t);
   }

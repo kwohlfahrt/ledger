@@ -280,6 +280,7 @@ public:
       day(other.day), wday(other.wday) {
     TRACE_CTOR(date_specifier_t, "copy");
   }
+  date_specifier_t& operator=(const date_specifier_t& other) = default;
   ~date_specifier_t() throw() {
     TRACE_DTOR(date_specifier_t);
   }
@@ -470,6 +471,7 @@ public:
       end_of_duration(other.end_of_duration) {
     TRACE_CTOR(date_interval_t, "copy");
   }
+  date_interval_t& operator=(const date_interval_t& other) = default;
   ~date_interval_t() throw() {
     TRACE_DTOR(date_interval_t);
   }
